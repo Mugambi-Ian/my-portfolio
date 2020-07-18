@@ -1,0 +1,13 @@
+@keyframes slide-up-anim {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+.slide-up {
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}

@@ -1,0 +1,26 @@
+.splash-body {
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 20px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 450px;
+  margin: auto;
+  width: 70%;
+  z-index: 5;
+}
+
+.splash-logo {
+  width: 33.3%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  background-color: #ffffff;
+  box-shadow: -0.5px -0.5px 3px 3px rgba(126, 126, 126, 0.281);
+  border-radius: 20px;
+  padding: 5px;
+  margin: 7px;
+}
