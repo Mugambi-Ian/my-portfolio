@@ -1,92 +1,91 @@
 #Clouds {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    height: 80%;
-    overflow: hidden;
-    -webkit-animation: FadeIn 3s ease-out;
-    animation: FadeIn 3s ease-out;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 80%;
+  overflow: hidden;
+  -webkit-animation: FadeIn 3s ease-out;
+  animation: FadeIn 3s ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @-webkit-keyframes FadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes FadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .Cloud {
-    position: absolute;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: auto 40%;
-    height: 20px;
-    -webkit-animation-duration: 120s;
-    animation-duration: 120s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-name: Float, FadeFloat;
-    animation-name: Float, FadeFloat;
-    z-index: 1;
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 40%;
+  height: 20px;
+  -webkit-animation-duration: 120s;
+  animation-duration: 120s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: Float, FadeFloat;
+  animation-name: Float, FadeFloat;
+  z-index: 1;
 }
 
 .Cloud.Foreground {
-    height: 10%;
-    min-height: 20px;
-    z-index: 3;
+  height: 10%;
+  min-height: 20px;
+  z-index: 3;
 }
 
 .Cloud.Background {
-    height: 9.09090909%;
-    min-height: 8px;
-    -webkit-animation-duration: 210s;
-    animation-duration: 210s;
+  height: 9.09090909%;
+  min-height: 8px;
+  -webkit-animation-duration: 210s;
+  animation-duration: 210s;
 }
 
 @-webkit-keyframes Float {
-    from {
-        -webkit-transform: translateX(100%) translateZ(0);
-        transform: translateX(100%) translateZ(0);
-    }
-    to {
-        -webkit-transform: translateX(-15%) translateZ(0);
-        transform: translateX(-15%) translateZ(0);
-    }
+  from {
+    -webkit-transform: translateX(100%) translateZ(0);
+    transform: translateX(100%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(-15%) translateZ(0);
+    transform: translateX(-15%) translateZ(0);
+  }
 }
 
 @keyframes Float {
-    from {
-        -webkit-transform: translateX(100%) translateZ(0);
-        transform: translateX(100%) translateZ(0);
-    }
-    to {
-        -webkit-transform: translateX(-15%) translateZ(0);
-        transform: translateX(-15%) translateZ(0);
-    }
+  from {
+    -webkit-transform: translateX(100%) translateZ(0);
+    transform: translateX(100%) translateZ(0);
+  }
+  to {
+    -webkit-transform: translateX(-15%) translateZ(0);
+    transform: translateX(-15%) translateZ(0);
+  }
 }
-
 
 /*
   @keyframes Float {
@@ -97,248 +96,253 @@
   */
 
 @-webkit-keyframes FadeFloat {
-    0%,
-    100% {
-        opacity: 0;
-    }
-    5%,
-    90% {
-        opacity: 1;
-    }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  5%,
+  90% {
+    opacity: 1;
+  }
 }
 
 @keyframes FadeFloat {
-    0%,
-    100% {
-        opacity: 0;
-    }
-    5%,
-    90% {
-        opacity: 1;
-    }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  5%,
+  90% {
+    opacity: 1;
+  }
 }
 
 .Cloud:nth-child(10) {
-    -webkit-animation-delay: -184.61538462s;
-    animation-delay: -184.61538462s;
-    top: 90%;
+  -webkit-animation-delay: -184.61538462s;
+  animation-delay: -184.61538462s;
+  top: 90%;
 }
 
 .Cloud.Foreground:nth-child(10) {
-    -webkit-animation-duration: 80s;
-    animation-duration: 80s;
-    height: 35%;
-    top: 60%;
+  -webkit-animation-duration: 80s;
+  animation-duration: 80s;
+  height: 35%;
+  top: 60%;
 }
 
 .Cloud.Background:nth-child(10) {
-    -webkit-animation-duration: 110s;
-    animation-duration: 110s;
-    height: -3.40909091%;
-    top: 70%;
+  -webkit-animation-duration: 110s;
+  animation-duration: 110s;
+  height: -3.40909091%;
+  top: 70%;
 }
 
 .Cloud:nth-child(9) {
-    -webkit-animation-delay: -166.15384615s;
-    animation-delay: -166.15384615s;
-    top: 80%;
+  -webkit-animation-delay: -166.15384615s;
+  animation-delay: -166.15384615s;
+  top: 80%;
 }
 
 .Cloud.Foreground:nth-child(9) {
-    -webkit-animation-duration: 84s;
-    animation-duration: 84s;
-    height: 12.5%;
-    top: 40%;
+  -webkit-animation-duration: 84s;
+  animation-duration: 84s;
+  height: 12.5%;
+  top: 40%;
 }
 
 .Cloud.Background:nth-child(9) {
-    -webkit-animation-duration: 114s;
-    animation-duration: 114s;
-    height: -32.15909091%;
-    top: 10%;
+  -webkit-animation-duration: 114s;
+  animation-duration: 114s;
+  height: -32.15909091%;
+  top: 10%;
 }
 
 .Cloud:nth-child(8) {
-    -webkit-animation-delay: -147.69230769s;
-    animation-delay: -147.69230769s;
-    top: 78%;
+  -webkit-animation-delay: -147.69230769s;
+  animation-delay: -147.69230769s;
+  top: 78%;
 }
 
 .Cloud.Foreground:nth-child(8) {
-    -webkit-animation-duration: 88s;
-    animation-duration: 88s;
-    height: 20%;
-    top: 85%;
+  -webkit-animation-duration: 88s;
+  animation-duration: 88s;
+  height: 20%;
+  top: 85%;
 }
 
 .Cloud.Background:nth-child(8) {
-    -webkit-animation-duration: 118s;
-    animation-duration: 118s;
-    height: -50.90909091%;
-    top: 75%;
+  -webkit-animation-duration: 118s;
+  animation-duration: 118s;
+  height: -50.90909091%;
+  top: 75%;
 }
 
 .Cloud:nth-child(7) {
-    -webkit-animation-delay: -129.23076923s;
-    animation-delay: -129.23076923s;
-    top: 62%;
+  -webkit-animation-delay: -129.23076923s;
+  animation-delay: -129.23076923s;
+  top: 62%;
 }
 
 .Cloud.Foreground:nth-child(7) {
-    -webkit-animation-duration: 92s;
-    animation-duration: 92s;
-    height: 27.5%;
-    top: 30%;
+  -webkit-animation-duration: 92s;
+  animation-duration: 92s;
+  height: 27.5%;
+  top: 30%;
 }
 
 .Cloud.Background:nth-child(7) {
-    -webkit-animation-duration: 122s;
-    animation-duration: 122s;
-    height: 0.34090909%;
-    top: 80%;
+  -webkit-animation-duration: 122s;
+  animation-duration: 122s;
+  height: 0.34090909%;
+  top: 80%;
 }
 
 .Cloud:nth-child(6) {
-    -webkit-animation-delay: -110.76923077s;
-    animation-delay: -110.76923077s;
-    top: 56%;
+  -webkit-animation-delay: -110.76923077s;
+  animation-delay: -110.76923077s;
+  top: 56%;
 }
 
 .Cloud.Foreground:nth-child(6) {
-    -webkit-animation-duration: 96s;
-    animation-duration: 96s;
-    height: 35%;
+  -webkit-animation-duration: 96s;
+  animation-duration: 96s;
+  height: 35%;
 }
 
 .Cloud.Background:nth-child(6) {
-    -webkit-animation-duration: 126s;
-    animation-duration: 126s;
-    height: 5.59090909%;
-    top: 48%;
+  -webkit-animation-duration: 126s;
+  animation-duration: 126s;
+  height: 5.59090909%;
+  top: 48%;
 }
 
 .Cloud:nth-child(5) {
-    -webkit-animation-delay: -92.30769231s;
-    animation-delay: -92.30769231s;
-    top: 40%;
+  -webkit-animation-delay: -92.30769231s;
+  animation-delay: -92.30769231s;
+  top: 40%;
 }
 
 .Cloud.Foreground:nth-child(5) {
-    -webkit-animation-duration: 100s;
-    animation-duration: 100s;
-    height: 22.5%;
-    top: 55%;
+  -webkit-animation-duration: 100s;
+  animation-duration: 100s;
+  height: 22.5%;
+  top: 55%;
 }
 
 .Cloud.Background:nth-child(5) {
-    -webkit-animation-duration: 130s;
-    animation-duration: 130s;
-    height: 5.84090909%;
-    top: 50%;
+  -webkit-animation-duration: 130s;
+  animation-duration: 130s;
+  height: 5.84090909%;
+  top: 50%;
 }
 
 .Cloud:nth-child(4) {
-    -webkit-animation-delay: -73.84615385s;
-    animation-delay: -73.84615385s;
-    top: 64%;
+  -webkit-animation-delay: -73.84615385s;
+  animation-delay: -73.84615385s;
+  top: 64%;
 }
 
 .Cloud.Foreground:nth-child(4) {
-    -webkit-animation-duration: 104s;
-    animation-duration: 104s;
-    height: 56%;
+  -webkit-animation-duration: 104s;
+  animation-duration: 104s;
+  height: 56%;
 }
 
 .Cloud.Background:nth-child(4) {
-    -webkit-animation-duration: 134s;
-    animation-duration: 134s;
-    height: 4.09090909%;
+  -webkit-animation-duration: 134s;
+  animation-duration: 134s;
+  height: 4.09090909%;
 }
 
 .Cloud:nth-child(3) {
-    -webkit-animation-delay: -55.38461538s;
-    animation-delay: -55.38461538s;
-    top: 18%;
+  -webkit-animation-delay: -55.38461538s;
+  animation-delay: -55.38461538s;
+  top: 18%;
 }
 
 .Cloud.Foreground:nth-child(3) {
-    -webkit-animation-duration: 108s;
-    animation-duration: 108s;
-    height: 17.5%;
+  -webkit-animation-duration: 108s;
+  animation-duration: 108s;
+  height: 17.5%;
 }
 
 .Cloud.Background:nth-child(3) {
-    -webkit-animation-duration: 138s;
-    animation-duration: 138s;
-    height: 5.34090909%;
+  -webkit-animation-duration: 138s;
+  animation-duration: 138s;
+  height: 5.34090909%;
 }
 
 .Cloud:nth-child(2) {
-    -webkit-animation-delay: -36.92307692s;
-    animation-delay: -36.92307692s;
-    top: 12%;
+  -webkit-animation-delay: -36.92307692s;
+  animation-delay: -36.92307692s;
+  top: 12%;
 }
 
 .Cloud.Foreground:nth-child(2) {
-    -webkit-animation-duration: 112s;
-    animation-duration: 112s;
-    height: 15%;
+  -webkit-animation-duration: 112s;
+  animation-duration: 112s;
+  height: 15%;
 }
 
 .Cloud.Background:nth-child(2) {
-    -webkit-animation-duration: 142s;
-    animation-duration: 142s;
-    height: 6.59090909%;
+  -webkit-animation-duration: 142s;
+  animation-duration: 142s;
+  height: 6.59090909%;
 }
 
 .Cloud:nth-child(1) {
-    -webkit-animation-delay: -18.46153846s;
-    animation-delay: -18.46153846s;
-    top: 6%;
+  -webkit-animation-delay: -18.46153846s;
+  animation-delay: -18.46153846s;
+  top: 6%;
 }
 
 .Cloud.Foreground:nth-child(1) {
-    -webkit-animation-duration: 116s;
-    animation-duration: 116s;
-    height: 12.5%;
+  -webkit-animation-duration: 116s;
+  animation-duration: 116s;
+  height: 12.5%;
 }
 
 .Cloud.Background:nth-child(1) {
-    -webkit-animation-duration: 146s;
-    animation-duration: 146s;
-    height: 7.84090909%;
+  -webkit-animation-duration: 146s;
+  animation-duration: 146s;
+  height: 7.84090909%;
 }
 
 .Cloud {
-    background-image: url("../../../assets/icons/ic_cloud_large.png");
+  background-image: url("../../../assets/icons/resources/ic_cloud_large.png");
 }
 
 .Cloud.Background {
-    background-image: url("../../../assets/icons/ic_cloud_small.png");
+  background-image: url("../../../assets/icons/resources/ic_cloud_small.png");
 }
 
 .bg-body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .bg-body {
-    height: 100%;
+  height: 100%;
 }
 
 .bg-body {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 .bg-body {
-    color: #FFF;
-    background-color: rgb(255, 255, 255);
-    background-image: radial-gradient(circle, rgb(139, 43, 249) 0%, rgb(132, 207, 241) 70%, rgb(179, 170, 255) 100%);
+  color: #fff;
+  background-color: rgb(255, 255, 255);
+  background-image: radial-gradient(
+    circle,
+    rgb(139, 43, 249) 0%,
+    rgb(132, 207, 241) 70%,
+    rgb(179, 170, 255) 100%
+  );
 }
 
 .bg-body {
-    background: #222;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+  background: #222;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }

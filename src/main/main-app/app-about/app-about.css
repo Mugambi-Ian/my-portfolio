@@ -1,0 +1,31 @@
+.about-content {
+  margin-top: 50px;
+  height: 95%;
+}
+
+.about-content h3,
+.about-content h4,
+.about-content h5,
+.about-content h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.about-content h5 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.about-content h4 {
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.about-content p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.about-content ul,
+.about-content li {
+  margin: 0;
+}

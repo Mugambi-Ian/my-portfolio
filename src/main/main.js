@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import App from "./main-app/main-app";
 import Splash from "./main-splash/splash";
 export default class Main extends Component {
   constructor() {
@@ -15,7 +16,7 @@ export default class Main extends Component {
   render() {
     return (
       <div className="main-body">
-        {this.state.loaded === false ? <Splash /> : <div></div>}
+        {this.state.loaded === false ? <Splash /> : <App />}
       </div>
     );
   }

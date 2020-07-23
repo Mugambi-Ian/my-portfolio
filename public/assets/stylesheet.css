@@ -3,10 +3,10 @@
 
 
 @font-face {
-    font-family: 'baloo_da_2bold';
+    font-family: 'baloo 2';
     src: url('bold.woff2') format('woff2'),
          url('bold.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
@@ -15,10 +15,10 @@
 
 
 @font-face {
-    font-family: 'baloo_da_2extrabold';
+    font-family: 'baloo 2';
     src: url('extrabold.woff2') format('woff2'),
          url('extrabold.woff') format('woff');
-    font-weight: normal;
+    font-weight: bolder;
     font-style: normal;
 
 }
@@ -27,7 +27,7 @@
 
 
 @font-face {
-    font-family: 'baloo_da_2medium';
+    font-family: 'baloo 2';
     src: url('medium.woff2') format('woff2'),
          url('medium.woff') format('woff');
     font-weight: normal;
@@ -39,10 +39,10 @@
 
 
 @font-face {
-    font-family: 'baloo_da_2regular';
+    font-family: 'baloo 2';
     src: url('regular.woff2') format('woff2'),
          url('regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 
 }
@@ -51,10 +51,10 @@
 
 
 @font-face {
-    font-family: 'baloo_da_2semibold';
+    font-family: 'baloo 2';
     src: url('semibold.woff2') format('woff2'),
          url('semibold.woff') format('woff');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 
 }

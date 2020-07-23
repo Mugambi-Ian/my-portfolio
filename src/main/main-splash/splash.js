@@ -55,11 +55,7 @@ export default class Splash extends Component {
     return <img src={logo} alt="logo" className="splash-logo" />;
   }
   content() {
-    if (this.state.closeItDown !== true) {
-      return this.pageIn;
-    } else if (this.state.closeItDown === true) {
-      return this.pageOut;
-    }
+    return this.pageIn;
   }
   render() {
     return (
