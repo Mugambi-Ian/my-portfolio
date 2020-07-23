@@ -16,7 +16,7 @@ const frameworks = [
   },
   {
     frameworkName: "Kotlin",
-    frameworkLogo: require("../assets/icons/frameworks/ic_java.png"),
+    frameworkLogo: require("../assets/icons/frameworks/ic_kotlin.png"),
   },
   {
     frameworkName: "JavaScript",
@@ -28,7 +28,7 @@ const frameworks = [
   },
   {
     frameworkName: "Python",
-    frameworkLogo: require("../assets/icons/frameworks/ic_java.png"),
+    frameworkLogo: require("../assets/icons/frameworks/ic-python.png"),
   },
   {
     frameworkName: "Node",
@@ -40,7 +40,7 @@ const frameworks = [
   },
   {
     frameworkName: "React-Native",
-    frameworkLogo: require("../assets/icons/frameworks/ic_java.png"),
+    frameworkLogo: require("../assets/icons/frameworks/ic-reactnative.png"),
   },
   {
     frameworkName: "Android",
@@ -52,7 +52,7 @@ const frameworks = [
   },
   {
     frameworkName: "Html/Css",
-    frameworkLogo: require("../assets/icons/frameworks/ic_java.png"),
+    frameworkLogo: require("../assets/icons/frameworks/ic-html.png"),
   },
 ];
 const libraries = [
