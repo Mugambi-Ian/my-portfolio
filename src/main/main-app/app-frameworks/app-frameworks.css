@@ -32,18 +32,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-.framework-card:hover {
-  transform: scale(0.98);
-  background-color: #729fcf;
-  color: #fff;
-}
-
-.framework-card:active {
-  transform: scale(1);
-  color: #000;
-  background-color: #fff;
-}
 @media only screen and (max-width: 600px) {
   .framework-card {
     min-width: 175px;

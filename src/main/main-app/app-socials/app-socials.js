@@ -14,6 +14,9 @@ export default class Socials extends Component {
   openMail = () => {
     window.open("mailto:linksian63@gmail.com", "_blank");
   };
+  openWhatsapp = () => {
+    window.open("https://wa.me/+254798098595", "_blank");
+  };
   socialsDiv() {
     return (
       <div className="socials-list">
@@ -64,6 +67,25 @@ export default class Socials extends Component {
             alt="logo"
           />
           <h4>Instagram</h4>
+        </div>
+        <div
+          className="social-card"
+          onClick={() => {
+            this.openWhatsapp();
+          }}
+        >
+          <img
+            src={require("../../../assets/icons/social/ic-whatsapp.svg")}
+            alt="logo"
+          />
+          <h4>Whatsapp</h4>
+        </div>
+        <div className="social-card">
+          <img
+            src={require("../../../assets/icons/social/ic-number.svg")}
+            alt="logo"
+          />
+          <h4>+254 798 098595</h4>
         </div>
       </div>
     );
