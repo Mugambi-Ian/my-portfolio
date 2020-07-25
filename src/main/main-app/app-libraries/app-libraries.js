@@ -27,11 +27,12 @@ export default class Libraries extends Component {
       });
   }
   libraryContainer(data) {
+    console.log(data);
     return (
       <div
         className="library-card"
         onClick={() => {
-         // this.openGit(data.gitLink);
+          this.openGit(data.libraryLink);
         }}
       >
         <img src={data.libraryIcon} alt="logo" />

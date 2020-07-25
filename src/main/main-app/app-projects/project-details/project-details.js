@@ -79,15 +79,14 @@ class Details extends Component {
                       style={{
                         display: "flex",
                         flexDirection: "column",
-                        flexWrap: "wrap",
-                        height: "100%",
                       }}
                     >
                       <h4
                         style={{
-                          fontWeight: "400",
+                          fontWeight: "700",
                           margin: "0",
                           fontSize: "18px",
+                          marginBottom: "20px",
                         }}
                       >
                         {this.state.projectTitle}
@@ -95,9 +94,6 @@ class Details extends Component {
                       <div
                         style={{
                           display: "flex",
-                          flexWrap: "wrap",
-                          marginBottom: "10px",
-                          marginTop: "auto",
                         }}
                       >
                         <div
