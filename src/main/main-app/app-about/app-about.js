@@ -62,7 +62,7 @@ export default class About extends Component {
                   </p>
                 </li>
                 <li>
-                  <p>Designing and building the mobile platform. </p>
+                  <p>Designing and building the user interface and expirence on the platform. </p>
                 </li>
                 <li>
                   <p>

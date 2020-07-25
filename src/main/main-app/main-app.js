@@ -7,6 +7,7 @@ import Frameworks from "./app-frameworks/app-frameworks";
 import Socials from "./app-socials/app-socials";
 import About from "./app-about/app-about";
 import Libraries from "./app-libraries/app-libraries";
+import { ProjectDetails } from "./app-projects/project-details/project-details";
 export default class App extends Component {
   constructor() {
     super();
@@ -130,6 +131,9 @@ export default class App extends Component {
                   </Route>
                   <Route path="/about" exact>
                     <About />
+                  </Route>
+                  <Route path="/projects/:id" exact>
+                    <ProjectDetails />
                   </Route>
                 </Switch>
               )}

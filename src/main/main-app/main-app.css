@@ -9,6 +9,11 @@
   font-family: "baloo 2";
 }
 
+.app-body a {
+  text-decoration: none;
+  color: #000;
+}
+
 .large-nav-bar {
   width: 30%;
   min-width: 300px;

@@ -1,22 +1,15 @@
 import React, { Component } from "react";
 import { FadeIn } from "../../../assets/anim/fade-in/anim";
-import { fetchFrameworks } from "../../../config/config";
+import { frameworks } from "../../../config/config";
 import Loader from "../app-splash/app-loader";
 import "./app-frameworks.css";
 export default class Frameworks extends Component {
   constructor() {
     super();
     this.state = {
-      loaded: false,
-      frameworks: [],
-    };
-  }
-  async componentDidMount() {
-    const x = await fetchFrameworks();
-    this.setState({
-      frameworks: x,
+      frameworks: frameworks,
       loaded: true,
-    });
+    };
   }
   frameworkContainer(data) {
     return (

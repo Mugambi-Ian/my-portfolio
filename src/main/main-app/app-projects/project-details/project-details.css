@@ -1,10 +1,11 @@
-.projects-list {
+.socials-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-.project-card {
+
+.social-card {
   width: 250px;
   object-fit: cover;
   -o-object-fit: cover;
@@ -16,45 +17,37 @@
   display: flex;
   flex-direction: column;
 }
-.project-card p {
-  margin-top: 0px;
-  margin-bottom: 0px;
+
+.social-card img {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.project-card h4 {
+
+.social-card h4 {
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 20px;
 }
 
-.project-card img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 10px;
-}
-
-.project-card .platform-icon {
-  margin: 0;
-  margin-right: 10px;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-  align-self: flex-end;
-}
-
-.project-card:hover {
+.social-card:hover {
   transform: scale(0.98);
   background-color: #729fcf;
   color: #fff;
 }
 
-.project-card:active {
+.social-card:active {
   transform: scale(1);
   color: #000;
   background-color: #fff;
 }
+
 @media only screen and (max-width: 600px) {
-  .project-card {
+  .social-card {
     min-width: 175px;
     width: 40%;
   }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FadeIn } from "../../../assets/anim/fade-in/anim";
-import { fetchLibraries } from "../../../config/config";
+import { firebase } from "../../../config/config";
 import Loader from "../app-splash/app-loader";
 import "./app-libraries.css";
 export default class Libraries extends Component {
@@ -12,33 +12,38 @@ export default class Libraries extends Component {
     };
   }
   async componentDidMount() {
-    const x = await fetchLibraries();
-    this.setState({
-      libraries: x,
-      loaded: true,
-    });
+    await firebase
+      .database()
+      .ref("libraries")
+      .on("value", (ds) => {
+        const libraries = [];
+        ds.forEach((x) => {
+          libraries.push(x.val());
+        });
+        this.setState({
+          libraries: libraries,
+          loaded: true,
+        });
+      });
   }
-  openGit = (link) => {
-    window.open(link, "_blank");
-  };
   libraryContainer(data) {
     return (
       <div
         className="library-card"
         onClick={() => {
-          this.openGit(data.gitLink);
+         // this.openGit(data.gitLink);
         }}
       >
-        <img src={data.libraryLogo} alt="logo" />
+        <img src={data.libraryIcon} alt="logo" />
         <h4>{data.libraryName}</h4>
-        <img
-          src={require("../../../assets/icons/social/ic-github.svg")}
-          className="git-icon"
-          alt="git"
-        />
+        <p>{data.libraryTitle}</p>
       </div>
     );
   }
+  openGit = (link) => {
+    window.open(link, "_blank");
+  };
+
   librariesDiv() {
     return (
       <div className="libraries-list">

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FadeIn } from "../../../assets/anim/fade-in/anim";
-import { fetchProjetcts } from "../../../config/config";
+import { firebase } from "../../../config/config";
+import { Link } from "react-router-dom";
 import Loader from "../app-splash/app-loader";
 import "./app-projects.css";
 export default class Projects extends Component {
@@ -12,20 +13,28 @@ export default class Projects extends Component {
     };
   }
   async componentDidMount() {
-    const x = await fetchProjetcts();
-    this.setState({
-      projects: x,
-      loaded: true,
-    });
+    await firebase
+      .database()
+      .ref("projects")
+      .on("value", (ds) => {
+        const projects = [];
+        ds.forEach((x) => {
+          projects.push(x.val());
+        });
+        this.setState({
+          projects: projects,
+          loaded: true,
+        });
+      });
   }
   projectContainer(data) {
     return (
-      <div className="project-card">
+      <Link className="project-card" to={`/project/${data.projectId}`}>
         <img src={data.projectIcon} alt="logo" />
         <h4>{data.projectName}</h4>
         <p>{data.projectTitle}</p>
         <img src={data.platformIcon} alt="platform" className="platform-icon" />
-      </div>
+      </Link>
     );
   }
   projectsDiv() {
