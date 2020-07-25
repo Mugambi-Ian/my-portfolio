@@ -28,9 +28,10 @@
 }
 
 .project-card img {
-  width: 200px;
-  height: 200px;
+  width: 85%;
+  min-height: 200px;
   margin-bottom: 10px;
+  
 }
 
 .project-card .platform-icon {
@@ -38,6 +39,7 @@
   margin-right: 10px;
   width: 40px;
   height: 40px;
+  min-height: 40px;
   margin-bottom: 10px;
   align-self: flex-end;
 }

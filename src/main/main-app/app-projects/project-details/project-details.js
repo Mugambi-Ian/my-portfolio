@@ -1,20 +1,21 @@
 import React, { Component } from "react";
 import { useParams } from "react-router-dom";
-import { FadeIn } from "../../../assets/anim/fade-in/anim";
+import { FadeIn } from "../../../../assets/anim/index";
 import { firebase } from "../../../../config/config";
 import "./project-details.css";
 import Loader from "../../app-splash/app-loader";
 class Details extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       loading: true,
-      projectId: this.props.projectId,
+      projectId: props.projectId,
       projectName: "",
       projectDescription: "",
       projectTitle: "",
       projectIcon: "",
       projectPlatform: "",
+      downloadUrl: "",
     };
   }
   async componentDidMount() {
@@ -24,12 +25,14 @@ class Details extends Component {
       .child(this.state.projectId)
       .on("value", (dara) => {
         const p = dara.val();
+        console.log(p);
         this.setState({
           projectName: p.projectName,
           projectDescription: p.projectDescription,
           projectTitle: p.projectTitle,
           projectIcon: p.projectIcon,
-          projectPlatform: p.projectPlatform,
+          projectPlatform: p.platformIcon,
+          downloadUrl: p.downloadUrl,
           loading: false,
         });
       });
@@ -41,7 +44,7 @@ class Details extends Component {
         time=".5s"
         component={
           <div className="content-body">
-            {this.state.loading === false ? (
+            {this.state.loading === true ? (
               <Loader />
             ) : (
               <>
@@ -59,6 +62,79 @@ class Details extends Component {
                 >
                   {this.state.projectName}
                 </h2>
+                <div className="details-body">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    <img
+                      className="project-logo"
+                      alt="logo"
+                      src={this.state.projectIcon}
+                    />
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        flexWrap: "wrap",
+                        height: "100%",
+                      }}
+                    >
+                      <h4
+                        style={{
+                          fontWeight: "400",
+                          margin: "0",
+                          fontSize: "18px",
+                        }}
+                      >
+                        {this.state.projectTitle}
+                      </h4>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexWrap: "wrap",
+                          marginBottom: "10px",
+                          marginTop: "auto",
+                        }}
+                      >
+                        <div
+                          className="btn-open-link"
+                          onClick={() => {
+                            window.open(this.state.downloadUrl, "_blank");
+                          }}
+                        >
+                          <p>Open Link</p>
+                        </div>
+                        <img
+                          className="project-platform"
+                          src={this.state.projectPlatform}
+                          alt="logo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <h5
+                    style={{
+                      fontWeight: "600",
+                      margin: "0",
+                      fontSize: "18px",
+                    }}
+                  >
+                    Description
+                  </h5>
+                  <span
+                    style={{
+                      fontWeight: "500",
+                      margin: "0",
+                      fontSize: "18px",
+                    }}
+                  >
+                    {this.state.projectDescription}
+                  </span>
+                </div>
               </>
             )}
           </div>

@@ -132,7 +132,7 @@ export default class App extends Component {
                   <Route path="/about" exact>
                     <About />
                   </Route>
-                  <Route path="/projects/:id" exact>
+                  <Route path="/project/:id" exact>
                     <ProjectDetails />
                   </Route>
                 </Switch>

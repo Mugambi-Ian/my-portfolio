@@ -5,50 +5,51 @@
   margin-bottom: 50px;
 }
 
-.social-card {
-  width: 250px;
-  object-fit: cover;
-  -o-object-fit: cover;
-  background-color: #ffffff;
-  box-shadow: -0.5px -0.5px 3px 3px rgba(126, 126, 126, 0.281);
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+.details-body {
+  margin-top: 50px;
+  width: 95%;
   display: flex;
   flex-direction: column;
 }
 
-.social-card img {
+.details-header {
+  display: flex;
+}
+
+.details-body .project-logo {
   width: 150px;
   height: 150px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: 20px;
+}
+.details-body .project-platform {
+  width: 25px;
+  height: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
 }
 
-.social-card h4 {
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
+.details-body .btn-open-link {
+  width: 120px;
+  background-color: #ffffff;
+  box-shadow: -0.5px -0.5px 3px 3px rgba(126, 126, 126, 0.281);
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.details-body .btn-open-link p {
+  margin: auto;
 }
 
-.social-card:hover {
-  transform: scale(0.98);
-  background-color: #729fcf;
+.details-body .btn-open-link:hover {
+  transform: scale(0.95);
   color: #fff;
+  background-color: #729fcf;
 }
-
-.social-card:active {
+.details-body .btn-open-link:active {
   transform: scale(1);
-  color: #000;
-  background-color: #fff;
-}
-
-@media only screen and (max-width: 600px) {
-  .social-card {
-    min-width: 175px;
-    width: 40%;
-  }
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
 }
